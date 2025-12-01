@@ -90,8 +90,6 @@ class Seq2Seq(nn.Module):
         return outputs
 
 
-device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-
 vocab_size = len(vocab)
 embed_size = 256
 hidden_size = 512
@@ -100,7 +98,7 @@ dropout = 0.1
 
 encoder = Encoder(vocab_size, embed_size, hidden_size, num_layers, dropout)
 decoder = Decoder(vocab_size, embed_size, hidden_size, num_layers, dropout)
-model = Seq2Seq(encoder, decoder, device).to(device)
+
 
 # Training setup
 
@@ -108,6 +106,5 @@ import torch.optim as optim
 
 PAD_IDX = vocab["<PAD>"]
 
-criterion = nn.CrossEntropyLoss(ignore_index=PAD_IDX)
-optimizer = optim.Adam(model.parameters(), lr=0.001)
+
 

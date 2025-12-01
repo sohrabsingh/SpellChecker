@@ -36,10 +36,13 @@ dataloader = DataLoader(dataset, batch_size=batch_size, shuffle=True, collate_fn
 # -----------------------------
 # Initialize model
 # -----------------------------
+device = torch.device("mps")
 vocab_size = len(vocab)
 encoder = Encoder(vocab_size, embed_size, hidden_size, num_layers, dropout)
 decoder = Decoder(vocab_size, embed_size, hidden_size, num_layers, dropout)
 model = Seq2Seq(encoder, decoder, device).to(device)
+
+
 
 criterion = nn.CrossEntropyLoss(ignore_index=PAD_IDX)
 optimizer = optim.Adam(model.parameters(), lr=lr)
