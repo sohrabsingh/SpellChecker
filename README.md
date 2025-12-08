@@ -90,20 +90,12 @@ The script automatically generates typo-target pairs.
 
 ### 2. Train the Model
 
-```bash
-python train.py
-```
-
 * Default: 10 epochs
 * Batch size: 16 (gradient accumulation simulates 32)
 * Scheduled teacher forcing decays from 1.0 → 0.5
 * Best checkpoint saved in `checkpoints/seq2seq_best.pt`
 
 ### 3. Evaluate & Sample Predictions
-
-```bash
-python evaluate.py
-```
 
 * Outputs average loss & token-level accuracy.
 * Displays sample input → target → predicted sequences.
