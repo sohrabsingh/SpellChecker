@@ -343,7 +343,7 @@ Contributions are welcome! Areas for improvement:
 If you use this work, please cite:
 
 ```bibtex
-@misc{hindi-spelling-correction,
+@misc{sohrab2025hindispell,
   author = {Sohrab Pritpal Singh},
   title = {Hindi Spelling Correction using Seq2Seq with Attention},
   year = {2025},
