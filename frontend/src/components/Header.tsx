@@ -27,7 +27,7 @@ const Header = () => {
           </div>
           <div className="flex items-center gap-2 px-3 py-2 bg-accent/10 rounded-lg">
             <Info className="w-4 h-4 text-accent" />
-            <span className="text-sm font-medium text-accent">94.38% Accuracy</span>
+            <span className="text-sm font-medium text-accent">Approximately 80% Accuracy</span>
           </div>
         </div>
       </div>

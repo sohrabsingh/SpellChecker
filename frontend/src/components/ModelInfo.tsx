@@ -15,22 +15,22 @@ const ModelInfo = () => {
     {
       icon: Database,
       label: "Vocabulary",
-      value: "91 Characters",
+      value: "87 Characters",
     },
     {
       icon: Cpu,
       label: "Embed Size",
-      value: "192 dims",
+      value: "256 dims",
     },
     {
       icon: Zap,
       label: "Hidden Size",
-      value: "256 units",
+      value: "512 units",
     },
     {
       icon: FileCode,
       label: "Training Data",
-      value: "100K sentences",
+      value: "231k Pairs of Words",
     },
   ];
 

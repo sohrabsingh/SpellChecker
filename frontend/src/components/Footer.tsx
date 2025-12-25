@@ -13,11 +13,14 @@ const Footer = () => {
         <div className="flex items-center gap-4">
           <div className="flex items-center gap-2 px-3 py-1.5 bg-secondary rounded-lg">
             <span className="text-xs font-medium text-secondary-foreground">
-              Model: seq2seq_best.pt
+              Model: hindi_spelling_model.pt
             </span>
           </div>
           <a
-            href="#"
+            href="https://github.com/sohrabsingh/SpellChecker"
+            target="_blank"
+            rel="noopener noreferrer"
+
             className="flex items-center gap-2 px-3 py-1.5 bg-foreground/5 hover:bg-foreground/10 rounded-lg transition-colors duration-200"
           >
             <Github className="w-4 h-4 text-foreground" />
@@ -28,7 +31,7 @@ const Footer = () => {
       
       <div className="max-w-6xl mx-auto mt-6 pt-6 border-t border-border/50">
         <p className="text-xs text-center text-muted-foreground">
-          Note: This is a frontend demo. To use the actual model, connect to a Python backend running the seq2seq_best.pt checkpoint.
+          Note: This is a frontend demo. To use the actual model, connect to a Python backend running the model.
         </p>
       </div>
     </footer>
